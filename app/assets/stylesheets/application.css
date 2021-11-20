@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.central_header {
+    background-color: yellow;
+    text-align: center;
+    font-size: 44px;
+    padding: 2%;
+    margin: -10px -8px 16px -8px;
+}
+
+#header_picture {
+    width: 6%;
+    height: 6%;
+    float: left;
+    margin-top: -16px;
+}
+
+.right_border {
+    border-right: 3px solid yellow;
+}
+
+.navbar {
+    list-style-type: none;
+    margin-top: -16px;
+    margin-left: -8px;
+    margin-right: -8px;
+    overflow: hidden;
+    background-color: white;
+    padding: 0.8%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.selected {
+    background-color: lightgray;
+}
+
+.navbar a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 100px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    box-shadow: 0 0 25px 0 black;
+}
+
+.navbar a:focus {
+    color: white;
+}
+
+.navbar li {
+    float: left;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid yellow;
+}

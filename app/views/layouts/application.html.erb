@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title><%= yield(:title) %> </title>
+    <%= favicon_link_tag   asset_path('x.png'), :rel => 'icon', :type =>  'image/png' %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1 class="central_header">
+      <%= image_tag "x.png", id:"header_picture" %>
+      X University
+    </h1>
+    <ul class="navbar">
+      <li class="right_border"><%= link_to "Home", controller: "home", action: "display"%></li>
+      <li class="right_border"><%= link_to "Courses", controller: "course", action: "display"%></li>
+      <li class="right_border"><%= link_to "Professors", controller: "professor", action: "display"%></li>
+      <li><%= link_to "Students", controller: "student", action: "display"%></li>
+    </ul>
+
+    <div id="main">
+
+    <%= yield %>
+
+    </div>
+
+    <hr>
+
+    <div id="footer">
+      Composed by<br>
+      Gordian Bruns<br>
+      Benjamin Lupton<br>
+      Sandy Wei<br>
+      Ben Hilfinger
+    </div>
+  </body>
+</html>
