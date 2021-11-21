@@ -4,14 +4,6 @@ class CoursesController < ApplicationController
   # GET /courses or /courses.json
   def index
     @courses = Course.all
-    @options = {}
-    department = Department.all
-    if department
-      department.each do |d|
-        @options[d.name] = d.id
-      end
-    end
-
   end
 
   # GET /courses/1 or /courses/1.json
