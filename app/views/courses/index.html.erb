@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="big_header">List of all courses:</h1><br><br>
+<% if @courses %>
+  <% @courses.each do |c| %>
+    <h1><%= c.name %><span class="normal_font left_margin"><%= link_to 'Show', c %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= link_to 'Edit', edit_course_path(c) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %></span></h1>
+    <h2>Department: <%= c.department.name %></h2>
+    <h2>Credit: <%= c.credit %></h2>
+    <h2>Professor: </h2>
+    <h2>Course description: <span class="normal_font"><%= c.course_description %></span></h2>
+    <br><br>
+  <% end %>
+<% end %>
+
+<br><br><br><br>
+
+<%= link_to 'New Course', new_course_path %>

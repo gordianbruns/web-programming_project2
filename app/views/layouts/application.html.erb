@@ -18,9 +18,9 @@
     </h1>
     <ul class="navbar">
       <li class="right_border"><%= link_to "Home", controller: "home", action: "display"%></li>
-      <!--<li class="right_border"><#%= link_to "Courses", controller: "course", action: "display"%></li>
-      <li class="right_border"><#%= link_to "Professors", controller: "professor", action: "display"%></li>
-      <li><#%= link_to "Students", controller: "student", action: "display"%></li>-->
+      <li class="right_border"><%= link_to "Courses", controller: "courses", action: "index"%></li>
+      <!--<li class="right_border"><#%= link_to "Professors", controller: "professor", action: "display"%></li>-->
+      <li><%= link_to "Students", controller: "students", action: "index"%></li>
     </ul>
 
     <div id="main">
@@ -32,11 +32,11 @@
     <hr>
 
     <div id="footer">
-      Composed by<br>
-      Gordian Bruns<br>
-      Benjamin Lupton<br>
-      Sandy Wei<br>
-      Ben Hilfinger
+      <small>Composed by<br>
+      &nbsp&nbsp Gordian Bruns<br>
+      &nbsp&nbsp Benjamin Lupton<br>
+      &nbsp&nbsp Sandy Wei<br>
+      &nbsp&nbsp Benjamin Hilfinger</small>
     </div>
   </body>
 </html>
