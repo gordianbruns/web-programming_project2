@@ -3,6 +3,9 @@ pre {
   padding: 10px;
   font-size: 11px; }
 
+a {
+  color: #000; }
+
 th {
   padding-bottom: 5px; }
 
@@ -43,3 +46,8 @@ div.actions {
 
 label {
   display: block; }
+
+.gravatar{float: right;
+  margin: 33px;
+  margin-top: -150px;
+}

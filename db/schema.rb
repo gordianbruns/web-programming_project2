@@ -27,4 +27,14 @@ ActiveRecord::Schema.define(version: 2021_11_21_204445) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "students", force: :cascade do |t|
+    t.string "name"
+    t.string "major"
+    t.integer "grad_year"
+    t.string "advisor"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "email"
+  end
+
 end

@@ -1,0 +1,32 @@
+<% provide(:title, @student.name) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Major:</strong>
+  <%= @student.major %>
+</p>
+
+<p>
+  <strong>Grad year:</strong>
+  <%= @student.grad_year %>
+</p>
+
+<p>
+  <strong>Advisor:</strong>
+  <%= @student.advisor %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
+
+<h1> <%= gravatar_for @student %>  </h1>
