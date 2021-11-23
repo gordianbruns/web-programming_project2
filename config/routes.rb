@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :professors
   resources :courses
   resources :students
   get 'home/display'
