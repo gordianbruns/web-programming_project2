@@ -12,6 +12,13 @@ class ProfessorsController < ApplicationController
 
   # GET /professors/new
   def new
+    @options_departments = {}
+    department = Department.all
+    if department
+      department.each do |d|
+        @options_departments[d.name] = d.id
+      end
+    end
     @professor = Professor.new
   end
 

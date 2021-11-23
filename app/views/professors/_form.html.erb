@@ -26,6 +26,11 @@
     <%= form.text_field :email %>
   </div>
 
+  <div class="field">
+    <%= form.label :department %>
+    <%= form.select :department_id, @options_departments %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
