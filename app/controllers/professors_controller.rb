@@ -24,6 +24,13 @@ class ProfessorsController < ApplicationController
 
   # GET /professors/1/edit
   def edit
+    @options_departments = {}
+    department = Department.all
+    if department
+      department.each do |d|
+        @options_departments[d.name] = d.id
+      end
+    end
   end
 
   # POST /professors or /professors.json

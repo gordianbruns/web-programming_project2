@@ -8,7 +8,7 @@
       <%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %></span></h1>
     <h2>Department: <%= c.department.name %></h2>
     <h2>Credit: <%= c.credit %></h2>
-    <h2>Professor: </h2>
+    <h2>Professor: <%= c.professor.name %></h2>
     <h2>Course description: <span class="normal_font"><%= c.course_description %></span></h2>
     <br><br>
   <% end %>

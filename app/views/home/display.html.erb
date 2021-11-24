@@ -1,2 +1,7 @@
-<h1>Home#display</h1>
-<p>Find me in app/views/home/display.html.erb</p>
+<h1 id="welcome_heading">Welcome!</h1>
+<div class="links">
+  <%= link_to "View our courses", controller: "courses", action: "index"%><br><br><br>
+  <%= link_to "Get to know our Professors", controller: "professors", action: "index"%><br><br><br>
+  <%= link_to "Student profile", controller: "students", action: "index"%><br><br><br>
+</div>
+<br><br><br>
